@@ -100,3 +100,6 @@ You can also look here:
 https://goerli.pixxiti.com/
 
 .:.
+
+## Deployment // Site Hosting
+
