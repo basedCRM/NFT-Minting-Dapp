@@ -29,10 +29,9 @@ The .png files are referred to within the NFT metadata [the .json files]
 .:. 
 
 The SRC folder contains all of the react | js | css files for the site. 
-
-.:. 
-
 The Contract folder contains a single solidity contract. 
+
+These were built by following the youtube tutorial.
 
 .:. 
 
@@ -40,6 +39,14 @@ The hardhat.config and the scripts folder are for deployment - they are currentl
 
 You will need to create a .env file, and run some commands in hardhat to compile | deploy | verify the contract on etherscan. 
 
+The .env files store the variables that are called in the deploy.js script and referred to in hardhat.config file. 
+
+These will store your Alchemy API Key for goerli [create a project there], as well as your private key for your deployer wallet, and your etherscan API key.
+
 .:. 
 
 This style of minter is one where someone calls a Mint() and then there is a sequence for the tokenURI -- which is the address of the .json file listed above. 
+
+The json file gets attached to that NFT, and there is a max number of NFTs that can be minted in the set, using a mint price which is set both in the contract, and also in the mainmint.js component.
+
+This is set for a collection of 69 NFTs.
