@@ -45,7 +45,11 @@ You will need to create a .env file, and run some commands in hardhat to compile
 
 The .env files store the variables that are called in the deploy.js script and referred to in hardhat.config file. 
 
-These will store your Alchemy API Key for goerli [create a project there], as well as your private key for your deployer wallet, and your etherscan API key.
+.env will store your: 
+
+* Alchemy API Key for goerli [https://dashboard.alchemyapi.io/
+* private key for your deployer wallet
+* your etherscan API key.
 
 .:. 
 
