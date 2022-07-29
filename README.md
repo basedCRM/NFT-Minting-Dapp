@@ -62,3 +62,41 @@ There is a max number of mints which can be called by one wallet.
 These are all set in the contract.
 
 This is set for a collection of 69 NFTs.
+
+## Commands
+
+Clone the repo, and setup your .env file. 
+Install dependencies outlined in the video.
+
+* npx hardhat clean
+* npx hardhat compile
+* npx hardhat run scripts/deploy.js --network goerli
+
+You ought to get a deployment address on goerli. 
+The deployment address for the testnet for my project is here: 
+
+https://goerli.etherscan.io/address/0x6dF2cc0af3ae6a093A6BB2C575503A208Bc3B2A4
+
+* npx hardhat verify --network goerli 0x6dF2cc0af3ae6a093A6BB2C575503A208Bc3B2A4
+
+The address at the end of the verify command will need to be the address your contract has been deployed to. 
+
+Now your contract ought to be deployed and verified on etherscan, which means, you can connect your metamask to etherscan to call write(). 
+
+Go to Etherscan and set isPublicMintEnabled (bool) to: true
+
+Get your artwork uploaded onto fleek with your .json files, and then, set baseTokenURI (string) to your baseTokenURI.
+
+Next modify the contract address in mainmint.js to reflect the contract address on goerli. 
+
+* npm start run
+
+Will initiate your localhost:3000 server, which runs the minter locally, but still allows you to interact with the goerli contract. 
+
+Test to see if you can mint -- if the minted NFTs show up in your wallet on Etherscan. 
+
+You can also look here: 
+
+https://goerli.pixxiti.com/
+
+.:.
