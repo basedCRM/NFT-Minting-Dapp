@@ -11,10 +11,10 @@ https://storageapi.fleek.co/4f9743ce-d4c0-4c96-8917-d32196fb5396-bucket/Archetyp
 
 You can see examples of Images, corresponding JSON files, and the naming convention / order for them in the IMG Samples folder. 
 
-0.png
-0.json
-1.png
-1.json
+* 0.png
+* 0.json
+* 1.png
+* 1.json
 
 This is done so that a variable called BaseTokenURI can be set in a function setBaseTokenURI 
 
