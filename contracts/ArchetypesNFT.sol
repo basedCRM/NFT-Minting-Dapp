@@ -19,8 +19,8 @@ contract ArchetypesNFT is ERC721, Ownable {
         totalSupply = 0;
         maxSupply = 69;
         maxPerWallet = 3;
-    // set wallet address
-    // set tokenURIz
+    /* set wallet address here -- not yet sure how to take the ETH out of the contract once it's been deposited. */
+    
     }
 
     function setIsPubilcMintEnabled(bool isPublicMintEnabled_) external onlyOwner {
