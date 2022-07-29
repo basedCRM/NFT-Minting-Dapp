@@ -46,7 +46,7 @@ The .env files store the variables that are called in the deploy.js script and r
 
 .env will store your: 
 
-* Alchemy API Key for goerli [https://dashboard.alchemyapi.io/
+* Alchemy API Key for goerli  -- https://dashboard.alchemyapi.io/
 * private key for your deployer wallet
 * your etherscan API key.
 
