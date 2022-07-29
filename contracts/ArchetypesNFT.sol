@@ -14,13 +14,15 @@ contract ArchetypesNFT is ERC721, Ownable {
     address payable public withdrawWallet;
     mapping(address => uint256) public walletMints;
 
+    // This section here is where you edit the details for your contract, name, supply details, etc.
+    
     constructor() payable ERC721('PolySquigs', 'SQUIG') {
         mintPrice = 0.01 ether;
         totalSupply = 0;
         maxSupply = 69;
         maxPerWallet = 3;
-    /* set wallet address here -- not yet sure how to take the ETH out of the contract once it's been deposited. */
-    
+    // Set wallet address here? -- not yet sure how to take the ETH out of the contract once it's been deposited. 
+
     }
 
     function setIsPubilcMintEnabled(bool isPublicMintEnabled_) external onlyOwner {
