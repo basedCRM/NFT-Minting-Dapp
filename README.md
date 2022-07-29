@@ -9,7 +9,7 @@ For this project, they are hosted on fleek.
 Ex: 
 https://storageapi.fleek.co/4f9743ce-d4c0-4c96-8917-d32196fb5396-bucket/Archetypes/0.json
 
-You can see examples of Images, corresponding JSON files, and the naming convention / order for them in the IMG Samples folder. 
+You can see examples of Images, corresponding JSON files, and the naming convention / order for them in IMG Samples.
 
 * 0.png
 * 0.json
@@ -22,9 +22,9 @@ In this case, the setBaseTokenURI is:
 
 https://storageapi.fleek.co/4f9743ce-d4c0-4c96-8917-d32196fb5396-bucket/Archetypes/
 
-So that the sequence can move from 0 to 1 to 2 etc. following the end of the BaseTokenURI -- which assigns .json files to each NFT. 
+The contract sequences .json files to attach to each NFT following the end of the BaseTokenURI.
 
-The .png files are referred to within the NFT metadata [the .json files]
+The .png files are referred to within the .json files.
 
 More details for NFT metadata here: 
 
@@ -32,16 +32,15 @@ https://docs.opensea.io/docs/metadata-standards
 
 .:. 
 
-The SRC folder contains all of the react | js | css files for the site. 
+The SRC folder contains all of the react | js | css files for the minting dapp.
 The Contract folder contains a single solidity contract. 
+The Scripts folder contains a deploy script -- and is currently set to Goerli Testnet.
 
 These were built by following the youtube tutorial.
 
 .:. 
 
-The hardhat.config and the scripts folder are for deployment - they are currently set to deploy to goerli testnet.
-
-You will need to create a .env file, and run some commands in hardhat to compile | deploy | verify the contract on etherscan. 
+You will need to create a .env file.
 
 The .env files store the variables that are called in the deploy.js script and referred to in hardhat.config file. 
 
@@ -53,8 +52,11 @@ The .env files store the variables that are called in the deploy.js script and r
 
 .:. 
 
-This style of minter is one where someone calls a Mint() and then there is a sequence for the tokenURI -- which is the address of the .json file listed above. 
+This style of minter is one where someone calls a Mint() and the next json file in sequence gets attached to that NFT.
+There are a max number of NFTs that can be minted in the set.
+There is a mint price which is set both in the contract, and also in the mainmint.js component.
+There is a max number of mints which can be called by one wallet. 
 
-The json file gets attached to that NFT, and there is a max number of NFTs that can be minted in the set, using a mint price which is set both in the contract, and also in the mainmint.js component.
+These are all set in the contract.
 
 This is set for a collection of 69 NFTs.
