@@ -57,7 +57,7 @@ The .env files store the variables that are called in the deploy.js script and r
 This style of minter is one where someone calls a Mint() and the next json file in sequence gets attached to that NFT.
 There are a max number of NFTs that can be minted in the set.
 There is a mint price which is set both in the contract, and also in the mainmint.js component.
-There is a max number of mints which can be called by one wallet. 
+There is a max number of mints which can be called by one transaction. 
 
 These are all set in the contract.
 
