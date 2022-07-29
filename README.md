@@ -103,3 +103,15 @@ https://goerli.pixxiti.com/
 
 ## Deployment // Site Hosting
 
+The files that you see in the root directory are the static build version of the website, which you can get by using the following command: 
+
+* run npm build
+
+This creates the contents above in a /build folder, and is called a "static build".
+
+I had no idea how to make the site deployed using fleek and had some difficulty with vercel, so I just hacked at it, and eventually I found that using the settings above. 
+
+Basically just dumping the contents of the /build folder into the root directory of the github above, and then connecting to vercel and using 'other' type of build, would produce a functioning site.
+
+
+
