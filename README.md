@@ -26,6 +26,9 @@ So that the sequence can move from 0 to 1 to 2 etc. following the end of the Bas
 
 The .png files are referred to within the NFT metadata [the .json files]
 
+More details for NFT metadata here: 
+https://docs.opensea.io/docs/metadata-standards
+
 .:. 
 
 The SRC folder contains all of the react | js | css files for the site. 
