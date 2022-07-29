@@ -1,4 +1,6 @@
-# NFT Minting Dapp Summary
+# NFT Minter
+
+## Summary
 
 This minting Dapp was created by following this tutorial: 
 https://www.youtube.com/watch?v=ynFNLBP2TPs
