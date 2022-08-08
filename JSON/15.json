@@ -1,0 +1,16 @@
+{
+  "description": "A reasonable bird, with sworls for hair and curves. She was really only approachable when she was high on acid. Otherwise, it was kind of difficult to be around her. Becoming an adult had sharpened her mind so well, that she often cut people with it. When she was high, she was still fascinated with the world.",
+  "external_url": "https://based.training",
+  "image": "https://storageapi.fleek.co/4f9743ce-d4c0-4c96-8917-d32196fb5396-bucket/Archetypes/15.png",
+  "name": "Birdie Grimm",
+  "attributes": [
+    {
+      "trait_type": "TRIBE",
+      "value": "VOID"
+    },
+    {
+      "trait_type": "VIBE",
+      "value": "CURIOUS"
+    }
+    ]
+}
