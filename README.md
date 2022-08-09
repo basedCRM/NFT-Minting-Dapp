@@ -1,4 +1,6 @@
-# NFT Minter
+# NFT Minter [Based.Training No. 1]
+
+Learning web3 skills, and leaving behind repos.
 
 ## Summary
 
@@ -11,7 +13,11 @@ For this project, they are hosted on fleek.
 Ex: 
 https://storageapi.fleek.co/4f9743ce-d4c0-4c96-8917-d32196fb5396-bucket/Archetypes/0.json
 
-You can see examples of Images, corresponding JSON files, and the naming convention / order for them in IMG Samples.
+PNG files and JSON files are included in the repo.
+
+All artwork is CC0. 
+
+File structures in the Fleek folder are like so:
 
 * 0.png
 * 0.json
@@ -32,11 +38,13 @@ More details for NFT metadata here:
 
 https://docs.opensea.io/docs/metadata-standards
 
+Xs does not have much in the way of metadata. The primary purpose of this collection was just to study faces, and ship a NFT project with its own minting dapp.
+
 .:. 
 
 The SRC folder contains all of the react | js | css files for the minting dapp.
 The Contract folder contains a single solidity contract. 
-The Scripts folder contains a deploy script -- and is currently set to Goerli Testnet.
+The Scripts folder contains a deploy script -- and is currently set to Mainnet -- though you can get the Goerli RPC from the Alchemyapi dashboard.
 
 These were built by following the youtube tutorial.
 
@@ -55,13 +63,13 @@ The .env files store the variables that are called in the deploy.js script and r
 .:. 
 
 This style of minter is one where someone calls a Mint() and the next json file in sequence gets attached to that NFT.
-There are a max number of NFTs that can be minted in the set.
-There is a mint price which is set both in the contract, and also in the mainmint.js component.
-There is a max number of mints which can be called by one transaction. 
+There are a max number of NFTs that can be minted in the set -- 69 in this case.
+There is a mint price which is set both in the contract, and also in the mainmint.js component -- .05 ETH in this case.
+There is a max number of mints which can be called by one transaction -- set to 1.
 
-These are all set in the contract.
+You'll notice that there are some commented out areas in the mainmint.js file, where it would be possible to have buttons which can increment and decrement the amount of NFTs to be minted at one time. I ran into an issue with the sequencing of the NFTs being minted -- for example, if the network was slow, and some NFTs were minted prior to others, due to batching, or whatever -- if the 7 NFT was minted before the 4 NFT, then, it would not be possible to mint 8. 
 
-This is set for a collection of 69 NFTs.
+Something like "That token has already been minted!" bug came about, and I resolved it by limiting the number of mints to 1 per transaction on the UI, and in the contract. 
 
 ## Commands
 
@@ -95,7 +103,7 @@ Will initiate your localhost:3000 server, which runs the minter locally, but sti
 
 Test to see if you can mint -- if the minted NFTs show up in your wallet on Etherscan. 
 
-You can also look here: 
+You can also look here for goerli testnet NFTs:
 
 https://goerli.pixxiti.com/
 
@@ -103,7 +111,7 @@ https://goerli.pixxiti.com/
 
 ## Deployment // Site Hosting
 
-The files that you see in the root directory are the static build version of the website, which you can get by using the following command: 
+Some of the files that you see in the root directory are the static build version of the website, which you can get by using the following command: 
 
 * run npm build
 
@@ -111,7 +119,31 @@ This creates the contents above in a /build folder, and is called a "static buil
 
 I had no idea how to make the site deployed using fleek and had some difficulty with vercel, so I just hacked at it, and eventually I found that using the settings above. 
 
-Basically just dumping the contents of the /build folder into the root directory of the github above, and then connecting to vercel and using 'other' type of build, would produce a functioning site.
+I will need to educate myself on this next.
 
+Basically just dumping the contents of the /build folder into the root directory of the github above, and then connecting to vercel and using 'other' type of build, produces a functioning site.
 
+## Comments on Xs
 
+These paintings were done because I enjoyed painting them, and wanted to learn how to create a minting dapp. The artwork is CC0, and you are free to use it however you like. 
+
+As such, there is no Roadmap, and no real "project specific discord" -- though you can follow my discord, as I have more artwork there, as well as updates on whatever I'm doing next. 
+
+The intention for Based.Training, is to have skills that are BASED and to do BASED projects.
+
+Some examples of things I would be interested in doing -- in no particular order: 
+
+* Alchemy API Hackathon Series -- This could help me learn about how to make onchain NFTs, or get more familiar with their API. 
+* Scrimba Front End Series -- This could help me make better websites, or not be limited to this style of vercel upload. 
+* Whitelist Integration -- Having whitelists or Merkel Airdrops integrated could be an interesting way of reaching out to specific communities, or rewarding previous minters. 
+* Supply games -- I have some ideas for supply games for NFTs. 
+* Marketing specific ideas -- Such as smaller collections designed for specific groups of people, or fundraising for specific causes.
+* Composable NFT ideas -- Working within some pre-existing codebase, and adding my art. 
+
+There are a lot of skills and literacies that I can learn in this area, and I will not be committing to focusing on any one of them right now -- but instead, will try small experiments, and learn as I go, and see how they go. 
+
+I prefer to do small batch projects, more than 10k generative projects, and I reject the idea that you only have one go to make it with NFTs. 
+
+I think an iterative approach, with more skills built between each iteration is interesting, and I would rather do that, and build up a more organic collection of work, and skills and collectors. 
+
+Thanks for reading -- and if you are an artist, and you'd like to fork this project, and design your own -- that is the purpose of this repo.
