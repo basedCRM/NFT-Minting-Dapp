@@ -117,6 +117,8 @@ Some of the files that you see in the root directory are the static build versio
 
 This creates the contents above in a /build folder, and is called a "static build".
 
+There is a public folder -- it is apparently needed to do this command.
+
 I had no idea how to make the site deployed using fleek and had some difficulty with vercel, so I just hacked at it, and eventually I found that using the settings above. 
 
 I will need to educate myself on this next.
